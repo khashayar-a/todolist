@@ -1,0 +1,32 @@
+import static java.lang.System.getProperties
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.google.code.gson:gson:2.2.+"
+    compile "org.lightcouch:lightcouch:0.+"
+
+    compile "javax.mail:mail:1.5.+"
+
+    compile "commons-cli:commons-cli:1.2"
+    compile project(":Shared")
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+run {
+    if(project.hasProperty('args')){
+        args project.args.split(' ')
+    }
+    systemProperties System.getProperties()
+    standardInput = System.in
+}
+
+version = '1.0'
+mainClassName = "Client"

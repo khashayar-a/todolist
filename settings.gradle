@@ -1,0 +1,7 @@
+rootProject.name = 'screen9'
+
+include 'Client'
+
+include 'Server'
+
+include 'Shared'
