@@ -13,7 +13,7 @@ dependencies {
     compile "com.google.code.gson:gson:2.2.+"
     compile "org.lightcouch:lightcouch:0.+"
 
-    compile "javax.mail:mail:1.5.+"
+
 
     compile "commons-cli:commons-cli:1.2"
     compile project(":Shared")

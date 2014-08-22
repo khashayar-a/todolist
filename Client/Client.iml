@@ -22,8 +22,6 @@
     <orderEntry type="library" exported="" name="Gradle: httpclient-4.3.3" level="project" />
     <orderEntry type="module" module-name="Shared" exported="" />
     <orderEntry type="library" exported="" name="Gradle: commons-cli-1.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: mail-1.5.0-b01" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: activation-1.1" level="project" />
   </component>
 </module>
 

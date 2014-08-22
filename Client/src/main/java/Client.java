@@ -83,17 +83,11 @@ public class Client {
         Option		mode = new Option("m", "mode", true, "Mode specified");
         options.addOption(mode);
 
-        Option		user = new Option("u", "user", true, "Mode specified");
+        Option		user = new Option("u", "user", true, "username to login");
         options.addOption(user);
-/**
- *
- * @author root
- */
-        Option		pass = new Option("p", "pass", true, "Mode specified");
-        options.addOption(pass);
 
-        Option		directory = new Option("d", "dir", true, "Directory ");
-        options.addOption(directory);
+        Option		pass = new Option("p", "pass", true, "password");
+        options.addOption(pass);
 
         return options;
     }

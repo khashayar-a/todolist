@@ -1,8 +1,7 @@
 import com.google.gson.JsonObject;
 
 // Created by Khashayar Abdouli on 8/21/14.
-// Copyright (c) 2014 Medopad Ltd. All right reserved.
-//
+
 public class ToDoList {
     private String username;
     private String title;
@@ -68,6 +67,10 @@ public class ToDoList {
         this.location = location;
     }
 
+    /**
+     * Converting the class to Json for easier use in DB
+     * @return JsonObject containing the class info
+     */
     public JsonObject toJson(){
         JsonObject json = new JsonObject();
         if(username != null){
